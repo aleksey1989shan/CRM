@@ -112,9 +112,15 @@ body {
 }
 
 .logo__wrapper {
+    width: 52px;
     margin-right: 57px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
 }
 
 .search::placeholder {
@@ -402,7 +408,7 @@ body {
 .wrapperModal__NewClient {
     position: absolute;
     left: 0;
-    top: -150%;
+    top: -200%;
     width: 100%;
     /* height: 100%; */
     transition: all 0.3s ease;
@@ -501,7 +507,7 @@ body {
 .wrapperModal__change {
     position: absolute;
     left: 0;
-    top: -150%;
+    top: -200%;
     width: 100%;
     /* height: 100%; */
     transition: all 0.3s ease;
