@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href=""> -->
+    <link rel="stylesheet" href="choices.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+        rel="stylesheet" />
+    <title>CRM</title>
+    <script defer src="script.js"></script>
+    <!-- type="module" -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__inner">
+            <div class="header">
+                <div class="logo__wrapper">
+                    <img class="logo" src="img/logo_svg.svg" alt="logo">
+                </div>
+                <input class="search" type="text" name="" id="" placeholder="Введите запрос">
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="title__main">Клиенты</h1>
+            <div id="app" class="app"></div>
+            <button type="submit" class="btn__add">
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+                        fill="#9873FF" />
+                </svg>Добавить клиента</button>
+        </div>
+    </div>
+
+    <!-- изменить данные -->
+    <div class="wrapperModal wrapperModal__change">
+        <div class="newClient">
+            <button class="cancel__btn cancel__btn-change" aria-label="отмена"></button>
+            <h2 class="title__2">Изменить данные <span class="span__id">ID:</span></h2>
+            <form action="#" class="change__form">
+                <div class="change__fio">
+                    <label class="change__label-surname"></label>
+                    <input class="change__input changeInput1" type="text">
+                    <span class="change__span">Фамилия<span class="star">*</span></span>
+                </div>
+                <div class="change__fio">
+                    <label class="change__label-name"></label>
+                    <input class="change__input changeInput2" type="text">
+                    <span class="change__span">Имя<span class="star">*</span></span>
+                </div>
+                <div class="change__fio">
+                    <label class="change__label-midlename"></label>
+                    <input class="change__input changeInput3" type="text">
+                    <span class="change__span">Отчество</span>
+                </div>
+            </form>
+            <div class="add__contact-wrapper add__contact-wrapper__change">
+                <div class="flex__add">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_124_2)">
+                            <path
+                                d="M7.99998 4.66683C7.63331 4.66683 7.33331 4.96683 7.33331 5.3335V7.3335H5.33331C4.96665 7.3335 4.66665 7.6335 4.66665 8.00016C4.66665 8.36683 4.96665 8.66683 5.33331 8.66683H7.33331V10.6668C7.33331 11.0335 7.63331 11.3335 7.99998 11.3335C8.36665 11.3335 8.66665 11.0335 8.66665 10.6668V8.66683H10.6666C11.0333 8.66683 11.3333 8.36683 11.3333 8.00016C11.3333 7.6335 11.0333 7.3335 10.6666 7.3335H8.66665V5.3335C8.66665 4.96683 8.36665 4.66683 7.99998 4.66683ZM7.99998 1.3335C4.31998 1.3335 1.33331 4.32016 1.33331 8.00016C1.33331 11.6802 4.31998 14.6668 7.99998 14.6668C11.68 14.6668 14.6666 11.6802 14.6666 8.00016C14.6666 4.32016 11.68 1.3335 7.99998 1.3335ZM7.99998 13.3335C5.05998 13.3335 2.66665 10.9402 2.66665 8.00016C2.66665 5.06016 5.05998 2.66683 7.99998 2.66683C10.94 2.66683 13.3333 5.06016 13.3333 8.00016C13.3333 10.9402 10.94 13.3335 7.99998 13.3335Z"
+                                fill="#9873FF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_124_2">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <button class="add__contact add__contact-change" type="button"> Добавить контакт</button>
+                </div>
+            </div>
+            <button class="save__btn-change mainStyle__btn" type="submit">Сохранить</button>
+            <button class="revoke__btn revoke__btn-delet" type="submit">Удалить клиента</button>
+        </div>
+    </div>
+
+    <br>
+    <!-- новый клиент -->
+    <div class="wrapperModal wrapperModal__NewClient">
+        <div class="newClient">
+            <button class="cancel__btn cancel__btn-NewClient" aria-label="отмена"></button>
+            <h2 class="title__2">Новый клиент</h2>
+            <form class="newClient__form" action="#">
+                <div class="surname">
+                    <label class="newClient__label-surname"></label>
+                    <input class="newClient__input newClient__input-1" type="text" placeholder="Фамилия*">
+                </div>
+                <div class="surname">
+                    <label class="newClient__label-name"></label>
+                    <input class="newClient__input newClient__input-2" type="text" placeholder="Имя*">
+                </div>
+                <div class="surname">
+                    <label class="newClient__label-midlename"></label>
+                    <input class="newClient__input newClient__input-3" type="text" placeholder="Отчество">
+                </div>
+                <div class="add__contact-wrapper add__contact-wrapper__new">
+                    <div class="flex__add">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_124_2)">
+                                <path
+                                    d="M7.99998 4.66683C7.63331 4.66683 7.33331 4.96683 7.33331 5.3335V7.3335H5.33331C4.96665 7.3335 4.66665 7.6335 4.66665 8.00016C4.66665 8.36683 4.96665 8.66683 5.33331 8.66683H7.33331V10.6668C7.33331 11.0335 7.63331 11.3335 7.99998 11.3335C8.36665 11.3335 8.66665 11.0335 8.66665 10.6668V8.66683H10.6666C11.0333 8.66683 11.3333 8.36683 11.3333 8.00016C11.3333 7.6335 11.0333 7.3335 10.6666 7.3335H8.66665V5.3335C8.66665 4.96683 8.36665 4.66683 7.99998 4.66683ZM7.99998 1.3335C4.31998 1.3335 1.33331 4.32016 1.33331 8.00016C1.33331 11.6802 4.31998 14.6668 7.99998 14.6668C11.68 14.6668 14.6666 11.6802 14.6666 8.00016C14.6666 4.32016 11.68 1.3335 7.99998 1.3335ZM7.99998 13.3335C5.05998 13.3335 2.66665 10.9402 2.66665 8.00016C2.66665 5.06016 5.05998 2.66683 7.99998 2.66683C10.94 2.66683 13.3333 5.06016 13.3333 8.00016C13.3333 10.9402 10.94 13.3335 7.99998 13.3335Z"
+                                    fill="#9873FF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_124_2">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <button class="add__contact add__contact-new" type="submit"> Добавить контакт</button>
+                    </div>
+                </div>
+                <button class="save__btn-newClient mainStyle__btn" type="submit">Сохранить</button>
+                <button class="revoke__btn revoke__btn-NewClient" type="button">Отмена</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <!-- удалить клиента -->
+    <div class="wrapperModal delet__client">
+        <div class="newClient">
+            <button class="cancel__btn cancel__btn-client" aria-label="отмена"></button>
+            <h2 class="title__delet">Удалить клиента</h2>
+            <p class="question">Вы действительно хотите удалить данного клиента?</p>
+            <button class="delet__btn mainStyle__btn">Удалить</button>
+            <button class="revoke__btn revoke__btn-client" type="submit">Отмена</button>
+        </div>
+    </div>
+
+    <script src="choices.min.js"></script>
+
+</body>
+
+</html>

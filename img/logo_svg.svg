@@ -1,0 +1,17 @@
+<svg width="52" height="50" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="52" width="54" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_6" d="m17.699352,10.418723" opacity="0.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+  <ellipse stroke="#0000ff" ry="24.179897" rx="25.185187" id="svg_10" cy="24.99504" cx="25.94709" stroke-width="1.5" fill="#0000ff"/>
+  <text stroke="#DDDDDD" transform="matrix(0.8731566071510315,0,0,0.4994744062423706,2.042916815634271,-0.6410315848344226) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_13" y="20.497685" x="16.105819" stroke-width="0" fill="#000000"/>
+  <text stroke="#0000ff" transform="matrix(0.9135936508911758,0,0,1.0616598398144959,1.353934895382702,-0.6431235954917147) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_15" y="32.455358" x="-1.248679" stroke-width="0" fill="#ffffff">CRM</text>
+ </g>
+</svg>

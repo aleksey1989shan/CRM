@@ -1,0 +1,99 @@
+[
+    {
+        "name": "ке",
+        "surname": "ц",
+        "lastName": "ку",
+        "contacts": [
+            {
+                "type": "Vk",
+                "value": "242424"
+            },
+            {
+                "type": "Facebook",
+                "value": "324"
+            },
+            {
+                "type": "Телефон",
+                "value": "2234"
+            }
+        ],
+        "id": "1678302826055",
+        "updatedAt": "2023-03-23T17:59:29.792Z",
+        "createdAt": "2023-03-08T19:13:46.055Z"
+    },
+    {
+        "name": "gggкк",
+        "surname": "tgкк",
+        "lastName": "ggg",
+        "contacts": [
+            {
+                "type": "Телефон",
+                "value": "gfgh"
+            },
+            {
+                "type": "Телефон",
+                "value": "а"
+            },
+            {
+                "type": "Телефон",
+                "value": "а"
+            },
+            {
+                "type": "Телефон",
+                "value": "а"
+            },
+            {
+                "type": "Телефон",
+                "value": "а"
+            },
+            {
+                "type": "Телефон",
+                "value": "а"
+            }
+        ],
+        "id": "1679928408386",
+        "updatedAt": "2023-04-02T10:38:47.451Z",
+        "createdAt": "2023-03-27T14:46:48.390Z"
+    },
+    {
+        "name": "ggfff",
+        "surname": "dfffgg",
+        "lastName": "",
+        "contacts": [],
+        "id": "1681760923409",
+        "updatedAt": "2023-04-17T19:48:43.412Z",
+        "createdAt": "2023-04-17T19:48:43.412Z"
+    },
+    {
+        "name": "dddd",
+        "surname": "ddd",
+        "lastName": "",
+        "contacts": [
+            {
+                "type": "Телефон",
+                "value": "dd"
+            }
+        ],
+        "id": "1682021956600",
+        "updatedAt": "2023-04-20T20:19:16.604Z",
+        "createdAt": "2023-04-20T20:19:16.604Z"
+    },
+    {
+        "name": "fff",
+        "surname": "ff",
+        "lastName": "",
+        "contacts": [
+            {
+                "type": "Телефон",
+                "value": "f"
+            },
+            {
+                "type": "Телефон",
+                "value": "f"
+            }
+        ],
+        "id": "1682021970545",
+        "updatedAt": "2023-04-20T20:19:30.545Z",
+        "createdAt": "2023-04-20T20:19:30.545Z"
+    }
+]
