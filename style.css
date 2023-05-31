@@ -118,7 +118,7 @@ body {
     overflow: hidden;
 }
 
-.logo{
+.logo {
     width: 100%;
     height: 100%;
 }
@@ -1153,6 +1153,14 @@ tr th:last-child {
 @media (max-width: 470px) {
     .newClient {
         margin: 0 10px;
+    }
+
+    .contact__input {
+        flex: 1 1 ;
+    }
+
+    .contact-wrapper__btn {
+        margin-right: 29px;
     }
 
 }
