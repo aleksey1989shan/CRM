@@ -695,16 +695,21 @@ function createUserTr(oneUser) {
             let deletLocalChange = localChangeClientArr.find(item => item.id == oneUser.id);
             localChangeClientArr.splice(localChangeClientArr.indexOf(deletLocalChange), 1);
 
+            // console.log(deletLocalChange["createdAt"]); 
 
             // добавляю изменённого клиента
+
+            let dateChangeClient = new Date();
+            let DataString = dateChangeClient.toISOString();
+
             let g = {
                 name: changeInput2.value.trim(),
                 surname: changeInput1.value.trim(),
                 lastName: changeInput3.value.trim(),
                 contacts: changeClientArr,
                 "id": oneUser.id,
-                "updatedAt": "2023-03-23T17:59:29.792Z",
-                "createdAt": "2023-03-08T19:13:46.055Z"
+                "updatedAt": DataString,
+                "createdAt": deletLocalChange["createdAt"]
             }
 
             localChangeClientArr.push(g);
@@ -801,8 +806,8 @@ function render() {
                 }
             ],
             "id": "1678302826055",
-            "updatedAt": "2023-03-23T17:59:29.792Z",
-            "createdAt": "2023-03-08T19:13:46.055Z"
+            "updatedAt": "0000-00-00T00:00:00.000Z",
+            "createdAt": "0000-00-00T00:00:00.000Z"
         };
         serwerArr.push(a);
         localStorage.setItem('localArr', JSON.stringify(serwerArr));
@@ -951,6 +956,8 @@ newClientForm.addEventListener('submit', function (event) {
     // }
     // createStudent();
 
+    let dateNewClient = new Date();
+    let DataString = dateNewClient.toISOString();
     let localArr = JSON.parse(localStorage.localArr);
     let lengthId = localArr.length;
     let appendArr = {
@@ -959,8 +966,8 @@ newClientForm.addEventListener('submit', function (event) {
         lastName: newClientInput3.value.trim(),
         contacts: arr,
         "id": `0000000${String(Math.round(Math.random() * 100000))}${String(lengthId)}`,
-        "updatedAt": "2023-03-23T17:59:29.792Z",
-        "createdAt": "2023-03-08T19:13:46.055Z"
+        "updatedAt": DataString,
+        "createdAt": DataString
     };
 
     localArr.push(appendArr);
@@ -1249,8 +1256,14 @@ inputSearch.addEventListener('input', function () {
 //   console.log(конец);
 
 
+// let a = Date();
+// let b = a.toString();
 
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
+// localStorage.setItem('localDate', JSON.stringify(b)); "2023-03-23T17:59:29.792Z"
 
 
 
